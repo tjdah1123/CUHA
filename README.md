@@ -5,7 +5,18 @@
 	</head>
 	
 	<body>
-		<input type="button" class="colorBtn" value="다크">
+		<script>
+
+		</script>
+		<input type="button" value="다크" onclick="
+		if(document.querySelector('body').style.backgroundColor == 'black'){
+			document.querySelector('body').style.backgroundColor='white';
+			document.querySelector('body').style.color='black';
+		}else{
+			document.querySelector('body').style.backgroundColor='black';
+			document.querySelector('body').style.color='white';
+		}
+		">
 	</body>
 </html>
 
