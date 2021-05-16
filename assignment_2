@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>과제2 - CUHA</title>
+	</head>
+	
+	<body>
+		<script>
+			var rsp = prompt('가위 바위 보');
+			var com_rsp = Math.random();
+			if(com_rsp >= 0 && com_rsp <= 0.33){
+				com_rsp = "가위";
+			}else if(com_rsp >= 0.34 && com_rsp <= 0.66){
+				com_rsp = "바위";
+			}else if(com_rsp >= 0.67 && com_rsp <= 0.99){
+				com_rsp = "보";
+			}
+			
+			if(rsp == com_rsp){
+				alert("무승부");
+			}else if(rsp == "가위"){
+				if(com_rsp == "바위"){
+					alert("패배");
+				}else if(com_rsp == "보"){
+					alert("승리");
+				}
+			}else if(rsp == "바위"){
+				if(com_rsp == "보"){
+					alert("패배");
+				}else if(com_rsp == "가위"){
+					alert("승리");
+				}
+			}else if(rsp == "보"){
+				if(com_rsp == "가위"){
+					alert("패배");
+				}else if(com_rsp == "바위"){
+					alert("승리");
+				}
+			}
+		</script>
+	</body>
+</html>
